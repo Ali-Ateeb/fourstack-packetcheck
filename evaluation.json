@@ -1,0 +1,88 @@
+{
+  "dataset": "Fictional cases held out from model training",
+  "cases": 8,
+  "exact_matches": 7,
+  "true_positive": 9,
+  "false_positive": 0,
+  "false_negative": 3,
+  "results": [
+    {
+      "case": "all-fields",
+      "expected": [
+        "callback",
+        "records",
+        "visit_window"
+      ],
+      "observed": [
+        "callback",
+        "records",
+        "visit_window"
+      ],
+      "exact_match": true
+    },
+    {
+      "case": "missing-callback",
+      "expected": [
+        "records",
+        "visit_window"
+      ],
+      "observed": [
+        "records",
+        "visit_window"
+      ],
+      "exact_match": true
+    },
+    {
+      "case": "missing-visit",
+      "expected": [
+        "callback",
+        "records"
+      ],
+      "observed": [
+        "callback",
+        "records"
+      ],
+      "exact_match": true
+    },
+    {
+      "case": "missing-records",
+      "expected": [
+        "callback",
+        "visit_window"
+      ],
+      "observed": [
+        "callback",
+        "visit_window"
+      ],
+      "exact_match": true
+    },
+    {
+      "case": "all-negated",
+      "expected": [],
+      "observed": [],
+      "exact_match": true
+    },
+    {
+      "case": "hypothetical",
+      "expected": [],
+      "observed": [],
+      "exact_match": true
+    },
+    {
+      "case": "irrelevant",
+      "expected": [],
+      "observed": [],
+      "exact_match": true
+    },
+    {
+      "case": "out-of-vocabulary",
+      "expected": [
+        "callback",
+        "records",
+        "visit_window"
+      ],
+      "observed": [],
+      "exact_match": false
+    }
+  ]
+}

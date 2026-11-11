@@ -1,0 +1,10 @@
+[
+  {"id":"all-fields","text":"Contact scheduling at the callback extension. Book the appointment within five days. Enclosed visit notes accompany the referral.","expected":["callback","visit_window","records"]},
+  {"id":"missing-callback","text":"Appointment planned for next month. Supporting records are attached. Callback number is pending.","expected":["visit_window","records"]},
+  {"id":"missing-visit","text":"Call the caregiver using the listed callback number. Supporting results are enclosed. No appointment window has been set.","expected":["callback","records"]},
+  {"id":"missing-records","text":"Reach the booking desk by telephone. Schedule the visit within the next week. The supporting report is not attached.","expected":["callback","visit_window"]},
+  {"id":"all-negated","text":"No callback number. The appointment window is unconfirmed. Records will be attached later.","expected":[]},
+  {"id":"hypothetical","text":"If the report is attached, check the contents. Should the clinic call the caregiver? The visit window might be next month.","expected":[]},
+  {"id":"irrelevant","text":"A blue folder arrived. The team reviewed the waiting room.","expected":[]},
+  {"id":"out-of-vocabulary","text":"Make sure to holler at us. Pencil something in. The docs are in the envelope.","expected":["callback","visit_window","records"]}
+]
